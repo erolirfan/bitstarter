@@ -24,6 +24,7 @@ References:
 var fs = require('fs');
 var program = require('commander');
 var cheerio = require('cheerio');
+var	rest = require('restler');
 var HTMLFILE_DEFAULT = "index.html";
 var CHECKSFILE_DEFAULT = "checks.json";
 
@@ -36,8 +37,15 @@ var assertFileExists = function(infile) {
     return instr;
 };
 
+var readWebpageViaGET= function(webAddress){
+		rest.get(webAddress).on('complete', function(result) {
+  if (result instanceof Error) return "error: " + result;
+	else return result;
+	});
+};
+
 var cheerioHtmlFile = function(htmlfile) {
-    return cheerio.load(fs.readFileSync(htmlfile));
+    return cheerio.load(readWebpageViaGET(htmlfile));
 };
 
 var loadChecks = function(checksfile) {
