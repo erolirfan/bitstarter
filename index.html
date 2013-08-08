@@ -1,273 +1,267 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Cozy Move</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-  <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
-  <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-  <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-43060269-1', 'irfanerol.com');
-  ga('send', 'pageview');
-
+    <head>
+        <meta name="generator" content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39">
+        <meta charset="utf-8">
+        <title>
+            Cozy Move
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css" type="text/css">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" type="text/css">
+        <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css" type="text/css">
+        <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js" type="text/javascript">
 </script>
-  <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
-  rel="stylesheet" type="text/css">
-  <style type="text/css">
+        <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js" type="text/javascript">
+</script>
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  /* Large desktop */
-  @media (min-width: 980px) { 
-    body {
-     padding-top: 60px;
-   }
-   .linediv-l {
-     border-right: 1px white solid;
-   }
-   .linediv-r {
-     border-left: 1px white solid;
-   }
- }
+        ga('create', 'UA-43060269-1', 'irfanerol.com');
+        ga('send', 'pageview');
 
- /* Landscape phones and down */
- @media (max-width: 480px) { 
-   .copy {
-     padding: 2.5% 10%;
-   }
-   .linediv-l {
-     border-bottom: 1px white solid;
-   }
-   .linediv-r {
-     border-top: 1px white solid;
-   }
- }
+        </script>
+        <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+        <style type="text/css">
 
- /* All form factors */
+        /* Large desktop */
+        @media (min-width: 980px) { 
+        body {
+        padding-top: 60px;
+        }
+        .linediv-l {
+        border-right: 1px white solid;
+        }
+        .linediv-r {
+        border-left: 1px white solid;
+        }
+        }
 
- /* Main body and headings */
- body{
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-.heading, .subheading {
-  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-  text-align: center;
-}
-p.lead {
-  padding-top: 1.5%;
-  font-size: 24px;
-  line-height: 30px;
-}
-p {
-  font-size: 18px;
-  line-height: 24px;
-}
+        /* Landscape phones and down */
+        @media (max-width: 480px) { 
+        .copy {
+        padding: 2.5% 10%;
+        }
+        .linediv-l {
+        border-bottom: 1px white solid;
+        }
+        .linediv-r {
+        border-top: 1px white solid;
+        }
+        }
 
-/* Video pitch and Action */
-.pitch {
-  padding: 2.5% 0%;
-}
-.order {
-  padding: 2% 0%;
-}
-.actions {
-  background-color: #343434;
-  padding: 3% 0%;
-}
-.video, .thermometer, .order, .social, .statistics {
-  text-align: center;
-}
-.statistics h3, .statistics p {
-  color: white;
-}
+        /* All form factors */
 
-/* Marketing Copy and Footer */
-.copy {
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
-  text-align: justify;
-}
-.asset {
-  padding: 2.5% 0%;
-}
-.footer {
-  color: #cccccc;
-  text-align: center;
-}
-.footer p {
-  font-size: 11px;
-}
-.footer a {
-  color: #ccccff;
-}
-</style>
-</head>
-<body>
+        /* Main body and headings */
+        body{
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        }
+        .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
+        }
+        p.lead {
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
+        }
+        p {
+        font-size: 18px;
+        line-height: 24px;
+        }
 
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <button type="button" class="btn btn-navbar"
-        data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="brand" href="#">Cozy Move</a>
-      <div class="nav-collapse collapse">
-        <ul class="nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+        /* Video pitch and Action */
+        .pitch {
+        padding: 2.5% 0%;
+        }
+        .order {
+        padding: 2% 0%;
+        }
+        .actions {
+        background-color: #343434;
+        padding: 3% 0%;
+        }
+        .video, .thermometer, .order, .social, .statistics {
+        text-align: center;
+        }
+        .statistics h3, .statistics p {
+        color: white;
+        }
 
-<div class="container">
-  <div class="row-fluid heading">
-    <div class="span12">
-      <h1>Cozy Move</h1>
-    </div>
-    <div class="row-fluid subheading">
-      <div class="span12">
-        <!-- Special typography from Bootstrap for lead paragraph. -->
-        <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-        <p class="lead">Guides you through relocation plans.</p>
-      </div>
-    </div>
-    <div class="row-fluid pitch">
-      <div class="span5 offset1 video">
-        <img class="img-polaroid" src="img/cozymove.png">
-      </div>
-
-      <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-      <div class="span5 actions">
-        <div class="span8 offset2">
-          <div class="statistics">
-            <div class="span4">
-                <!-- linediv-l and linediv-r give dividing lines that look
-                different in horizontal and vertical layouts, illustrating
-                media queries. -->
-                <div class="linediv-l">
-                  <h3>1000</h3> <p>backers</p>
+        /* Marketing Copy and Footer */
+        .copy {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
+        }
+        .asset {
+        padding: 2.5% 0%;
+        }
+        .footer {
+        color: #cccccc;
+        text-align: center;
+        }
+        .footer p {
+        font-size: 11px;
+        }
+        .footer a {
+        color: #ccccff;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="#">Cozy Move</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $10,000</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row-fluid heading">
+                <div class="span12">
+                    <h1>
+                        Cozy Move
+                    </h1>
                 </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-r">
-                  <h3>10</h3> <p>days left</p>
+                <div class="row-fluid subheading">
+                    <div class="span12">
+                        <p class="lead">
+                            Guides you through relocation plans.
+                        </p>
+                    </div>
                 </div>
-              </div>
+                <div class="row-fluid pitch">
+                    <div class="span5 offset1 video">
+                        <img class="img-polaroid" src="img/cozymove.png" alt="cozy move logo">
+                    </div>
+                    <div class="span5 actions">
+                        <div class="row-fluid">
+                            <div class="span8 offset2">
+                                <div class="statistics">
+                                    <div class="span4">
+                                        <div class="linediv-l">
+                                            <h3>
+                                                1000
+                                            </h3>
+                                            <p>
+                                                backers
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <div class="linediv-c">
+                                            <h3>
+                                                $6000
+                                            </h3>
+                                            <p>
+                                                of $10,000
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <div class="linediv-r">
+                                            <h3>
+                                                10
+                                            </h3>
+                                            <p>
+                                                days left
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span10 offset1">
+                            <div class="thermometer progress active">
+                                <div class="bar bar-success" style="width: 60%;"></div>
+                                <div class="bar bar-warning" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                        <div class="span6 offset3 order">
+                            <button class="btn btn-success btn-large">Preorder</button>
+                        </div>
+                        <div class="span8 offset2 social">
+                            <button class="btn btn-twitter">| Twitter</button> <button class="btn btn-facebook">| Facebook</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid section1">
+                    <div class="span5 offset1 asset">
+                        <img class="img-polaroid" src="http://placehold.it/480x300" alt="place holder">
+                    </div>
+                    <div class="span5 copy">
+                        <p>
+                            Cozy Move is a perfect tool for the people who wants to relocate to a different place. It will give you the personalized results based on your family's characteristics. Assume you have a family of two children and a spouse. You all have different characteristics. You have a job, your spouse loves to ride a bike and your children should attend to school. Using Cozy Move, you have a chance to define the requirements for each individual and application will show the different options for you ordered by suitability. You can also use the application as a person living alone. Just select where do you want to live and enter your expectations, application will take care of the rest and give you the personalized results.
+                        </p>
+                    </div>
+                </div>
+                <div class="row-fluid section2">
+                    <div class="span5 offset1 copy copy-right">
+                        <p>
+                            Cozy Move is also a perfect tool for homeowners. Once you added your house for rent/sale, tool will display the nearby locations to you. If there are missing important places you want to show off, you can add those immediately with location adding feature.Cozy Move will have two languages (English and Turkish) in its initial release. After that it will cover more languages. It will also show you the possible moving expenses based on your geolocation and places to order food based on the reviews of other people for the first couple nights if you wish. Ultimately, Cozy Move is a tool for people who wants to relocate without trouble. For more info, you can visit FAQ below or contact me directly.
+                        </p>
+                    </div>
+                    <div class="span5 asset">
+                        <img class="img-polaroid" src="http://placehold.it/480x300" alt="place holder">
+                    </div>
+                </div>
+                <div class="row-fluid faq">
+                    <div class="span10 offset1">
+                        <h3>
+                            FAQ
+                        </h3>
+                        <div class="accordion" id="accordion2">
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Which platforms will Cozy Move support?</a>
+                                </div>
+                                <div id="collapseOne" class="accordion-body collapse">
+                                    <div class="accordion-inner">
+                                        It will run on both desktop (PC/Mac) and mobile (Android/iPhone/iPad) platforms since it will be a web application
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">Will there be an API for developers to integrate it onto their systems?</a>
+                                </div>
+                                <div id="collapseTwo" class="accordion-body collapse">
+                                    <div class="accordion-inner">
+                                        API might not be available on its initial release. But next release will have an public API as well surely.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid footer">
+                    <div class="span12">
+                        <p>
+                            This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a> , without all the cruft that would otherwise be put at the bottom of the page.
+                        </p>
+                        <p>
+                          <a href=""></a>
+                          <img class="img-polaroid" src="img/valid_html5.png" alt="HTML5 Valid" title="This website is HTML5 valid">
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="span10 offset1">
-            <!-- Bootstrap progress bar -->
-            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-            <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
-            </div>
-          </div>
-          <div class="span6 offset3 order">
-            <!-- Standard Bootstrap button. -->
-            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <button class="btn btn-success btn-large">Preorder</button>
-          </div>
-          <div class="span8 offset2 social">
-            <!-- Social buttons are not included in default Bootstrap. -->
-            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-          </div>
         </div>
-      </div>
-
-      <!-- Beyond this part the marketing copy begins. -->
-      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
-      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-      <!-- http://placehold.it -->
-      <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-        <div class="span5 copy">
-          <p>
-            Cozy Move is a perfect tool for the people who wants to relocate to a different place. It will give you the personalized results based on your family's characteristics. Assume you have a family of two children and a spouse. You all have different characteristics. You have a job, your spouse loves to ride a bike and your children should attend to school.
-            Using Cozy Move, you have a chance to define the requirements for each individual and application will show the different options for you ordered by suitability. You can also use the application as a person living alone. Just select where do you want to live and enter your expectations, application will take care of the rest and give you the personalized results.
-          </p>
-        </div>
-      </div>
-      <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-            Cozy Move is also a perfect tool for homeowners. Once you added your house for rent/sale, tool will display the nearby locations to you. If there are missing important places you want to show off, you can add those immediately with location adding feature.Cozy Move will have two languages (English and Turkish) in its initial release. After that it will cover more languages. It will also show you the possible moving expenses based on your geolocation and places to order food based on the reviews of other people for the first couple nights if you wish. Ultimately, Cozy Move is a tool for people who wants to relocate without trouble. For more info, you can visit FAQ below or contact me directly.
-          </p>
-        </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-      </div>
-
-      <div class="row-fluid faq">
-        <div class="span10 offset1">
-          <h3>FAQ</h3>
-          <div class="accordion" id="accordion2">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse"
-                data-parent="#accordion2" href="#collapseOne">
-                Which platforms will Cozy Move support?
-              </a>
-            </div>
-            <div id="collapseOne" class="accordion-body collapse">
-              <div class="accordion-inner">
-                It will run both desktop (PC/Mac) and mobile (Android/iPhone/iPad) platforms since it will be a web application
-              </div>
-            </div>
-          </div>
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse"
-              data-parent="#accordion2" href="#collapseTwo">
-              Will there be an API for developers to integrate it onto their systems?
-            </a>
-          </div>
-          <div id="collapseTwo" class="accordion-body collapse">
-            <div class="accordion-inner">
-              API might not be available on its initial release. But next release will have an public API as well surely.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
-  <!-- http://creativecommons.org/licenses/ -->
-  <div class="row-fluid footer">
-    <div class="span12">
-      <p>This work is licensed under
-        the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-        By-SA 3.0
-      </a>, without all the cruft that would otherwise be
-      put at the bottom of the page.</p>
-    </div>
-  </div>
-</div>
-</body>
+    </body>
 </html>
 
